@@ -1,0 +1,11 @@
+NISE: Near-Duplicate Image Search Engine
+
+
+extract:	Feature extraction program.
+		This directory contains mainly legacy code from
+		the experimental system.  Need to be rewritten.
+server:		Server programs.
+index:		Offline index programs.
+cluster:	Cluster (disk layout) programs.
+expr:		Experiment related programs.
+

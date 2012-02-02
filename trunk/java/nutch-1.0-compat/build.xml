@@ -1,0 +1,22 @@
+<project>
+    <property environment="env"/>
+    <property name="lib.dir"     value="${env.NUTCH_HOME}"/>
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+        <fileset dir="${lib.dir}" includes="lib/*.jar"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+    <javac srcdir="nise" destdir="build/classes" classpathref="classpath"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="build"/>
+    <jar destfile="../nise-compat.jar" basedir="build/classes" includes="**/*.class"/>
+    </target>
+</project>
