@@ -1,0 +1,202 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="jquery.jcrop.css"/> 
+    <link rel="stylesheet" type="text/css" href="nise.css"/> 
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.jcrop.nise.js"></script>
+    <script type="text/javascript" src="jquery.form.js"></script>
+    <script type="text/javascript" src="nise.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <table id="top"><tr>
+        <td class="left"><img id="logo" src="logo.png"/><br/></td>
+        <td>
+        <!-- Search Bar -->
+            <table>
+                <tr>
+                    <td>输入图片网址</td>
+                    <td>上传图片</td>
+                    <td>系统演示</td>
+                    <!--
+                    <td>Show random images</td>
+                    -->
+                </tr>
+                <tr>
+                    <td>
+                        <form class="search">
+                        <input id="query_url"></input>
+                        <button id="search_url">提交</button>
+                        <span>或</span>
+                        </form>
+                    </td>
+                    <td>
+                       <form id="upload_form" class="search" action="/search/upload" enctype="multipart/form-data" method="POST">
+                       <input type="hidden" id="form_expansion" name="expansion" value=""/>
+                       <input type="hidden" id="form_batch" name="batch" value=""/>
+                       <input type="hidden" id="form_size" name="size" value=""/>
+                       <input type="hidden" id="form_offset" name="page_offset" value="0"/>
+                       <input type="hidden" id="form_count" name="page_count" value="50"/>
+                       <input type="hidden" id="form_time" name="time_limit" value="1000"/>
+                       <input id="upload_file" type="file" name="upload" />
+                       <input id="upload_submit" type="submit" value="Upload"/>
+                       <span>或</span>
+                       </form>
+                     </td>
+                     <td>
+                       <form class="search">
+                           <button id="show_demo">查询范例</button>
+                       </form>
+                     </td>
+                     <td>
+                       <form class="search">
+                           <button id="search_random">随便看看</button>
+                       </form>
+                     </td>
+                </tr>
+            </table>
+       </td>
+    </tr></table>
+    <!-- Header done -->
+    <table><tr>
+        <td valign="top" class="left">
+            <div class="summary">修改查询图片</div>
+            <div id="query">
+                <img id="crop" src=""/>
+                <button id="docrop" style="width:50px">保留</button>
+                <button id="docut" style="width:50px">切除</button>
+            </div>
+            <div id="options_toggle" class="toggle">选项</div>
+            <div id="options" class="toggled">
+                <table class="option_table">
+                    <!--
+                <tr><td>
+                相似度:
+                </td></tr>
+                <tr><td>
+                <select id="threshold" class="resubmit" name="threshold">
+                    <option value="3">非常相似</option>
+                    <option value="4" selected>相似</option>
+                </select>
+                </td></tr>
+                -->
+                <tr><td>
+                结果扩展:
+                </td></tr>
+                <tr><td>
+                <select id="result_expansion" class="resubmit" name="expansion">
+                    <option value="0">否</option>
+                    <option value="1" selected>是</option>
+                </select>
+                </td></tr>
+                <tr><td>
+                增量搜索:
+                </td></tr>
+                <tr><td>
+                <select id="result_batch" class="resubmit" name="batch">
+                    <option value="0">是</option>
+                    <option value="1" selected>否</option>
+                </select>
+                </td></tr>
+                <tr><td>
+                每页显示图片数:
+                </td></tr>
+                <tr><td>
+                <select id="results_per_page" class="refresh">
+                    <option value="20">20</option>
+                    <option value="50" selected>50</option>
+                    <option value="100">100</option>
+                </select>
+                </td></tr>
+                <!--
+                <tr><td>
+                Size filter:
+                </td></tr>
+                <tr><td>
+                <select id="size_select"class="resubmit">
+                    <option value="0" selected>all</option>
+                    <option value="1">small</option>
+                    <option value="2">medium</option>
+                    <option value="3">large</option>
+                </select>
+                </td></tr>
+                -->
+        <!--
+
+                <tr><td>
+                时间限制:
+                </td></tr>
+                <tr><td>
+                <select id="time_limit">
+                    <option value="100">0.1s</option>
+                    <option value="200">0.2s</option>
+                    <option value="500">0.5s</option>
+                    <option value="1000" selected>1s</option>
+                    <option value="2000">2s</option>
+                    <option value="5000">5s</option>
+                </select>
+                </td></tr>
+        -->
+                </table>
+            </div>
+            <div id="advanced_toggle" class="toggle">高级功能</div>
+            <div id="advanced" class="toggled">
+                <table class="option_table">
+                <tr><td>
+                当前会话号
+                </td></tr>
+                <tr><td>
+                <input id="current_session" style="width:60px"/>
+                <!--
+                <button id="copy_session">Copy</button><br/>
+                -->
+                </td></tr>
+                <tr><td>
+                当前查询特征值
+                </td></tr>
+                <tr><td>
+                <input id="current_sha1" style="width:60px"/>
+                <!--
+                <button id="copy_sha1">Copy</button><br/>
+                -->
+                </td></tr>
+                <tr><td>
+                用会话号恢复查询
+                </td></tr>
+                <tr><td>
+                <input id="session_key" style="width:60px"/>
+                <button id="recover_session">提交</button><br/>
+                </td></tr>
+                <tr><td>
+                用特征值取回查询
+                </td></tr>
+                <tr><td>
+                <input id="query_sha1" style="width:60px"/>
+                <button id="search_sha1">提交</button><br/>
+                </td></tr>
+                <tr><td>
+                系统信息
+                </td></tr>
+                <tr><td>
+                <button id="statistics">显示</button><br/>
+                </td></tr>
+                </table>
+            </div>
+            <div id="history_toggle" class="toggle">搜索记录</div>
+            <div id="history" class="toggled">
+                <a id="clear_history">清除记录</a>
+                <div id="history_list">
+                </div>
+            </div>
+        </td>
+        <td valign="top" id="right"><table>
+                <tr><td><div class="summary"><span id="total"></span><span id="viewing"></span></div></td></tr>
+                <tr><td><div id="results"></div></td></tr>
+            <tr><td><div class="summary" id="index"></div></td></tr>
+        </table></td>
+    </tr></table>
+    <div id="bottom">本系统索引了三千万淘宝商品图片和三千万Flickr图片, 对商品图片查询效果较好<br/>
+    <Simigle网络图片搜索引擎, <a href="http://www.cs.princeton.edu/cass">王子屯大学计算机系</a>. 版权所有 2009,2010 <a href="http://www.cs.princeton.edu/~wdong">Wei Dong</a></div>
+</body>
+</html>
+

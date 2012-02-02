@@ -1,0 +1,25 @@
+<project>
+    <property environment="env"/>
+    <property name="lib.dir"  value="${env.HADOOP_HOME}"/>
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <property name="main-class"  value="nise.Import"/>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+    <javac srcdir="nise" destdir="build/classes" classpathref="classpath"  debug="on" debuglevel="lines,vars,source">
+        <compilerarg value="-Xlint:deprecation"/>
+    </javac>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="build"/>
+        <jar destfile="nise.jar" basedir="build/classes" includes="**/*.class"/>
+    </target>
+</project>

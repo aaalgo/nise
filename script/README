@@ -1,0 +1,18 @@
+input:
+hadoop jar ../index-java/nise.jar nise.Import <output> < <input>
+
+merge:
+hadoop pipes -conf merge.xml -input <input> -output <output>
+
+number:
+hadoop jar ../index-java/nise.jar nise.Number <output> <input>
+
+hash:
+hadoop pipes -conf graph-hash.xml -input <> -output <>
+
+join:
+hadoop pipes -conf graph-join.xml -input <> -output <>
+
+group:
+hadoop pipes -conf group.xml -input <> -output <>
+

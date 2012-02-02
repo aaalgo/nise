@@ -1,0 +1,13 @@
+version 0.3
+
+* Migrate extractor from OpenCV to CImg. (nise/extractor -> nise/image)
+
+version 0.2
+
+* Support for major browsers: Firefox, IE, Safari, Chrome
+* New server page framework
+* Improved logging
+* Clustering with localized PageRank
+
+Version 0.1 2010-09-17 (trunk-0-1)
+The first working version.

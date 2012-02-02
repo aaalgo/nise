@@ -1,0 +1,4 @@
+
+ADD_EXECUTABLE(server server.cpp)
+TARGET_LINK_LIBRARIES(server ${DEFAULT_LIBRARIES})
+
