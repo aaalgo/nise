@@ -13,3 +13,31 @@ NISE depends on the following software:
   * Various other libraries like libjpeg which are typically present in the system.
 
 = Building =
+
+== Directory layout ==
+
+Put the nise code, LSHKIT code and an empty build directory in a directory structure like the following (SRC can be any directory):
+  
+  * SRC/nise
+  * SRC/lshkit
+  * SRC/build
+
+
+== C++ part ==
+
+  Run the following:
+
+[SRC]$ cd build
+[build]$ cmake -D CMAKE_BUILD_TYPE=release ../nise
+[build]$ make
+
+The executables will be produced in the directory SRC/build/bin .
+  
+== Java part ==
+
+  Run the following
+
+[SRC]$ cd nise/java
+[java]$ ant jar
+
+= Running =
