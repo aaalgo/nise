@@ -46,4 +46,30 @@ The executables will be produced in the directory SRC/nise/bin .
 [java]$ ant jar
 }}}
 
+= Installation =
+
+Build a directory in your hadoop file system and export that as $NISE_HADOOP_HOME.  Chose a installation directory in local file system and export that as $NISE_HOME.
+
+Run the following after successfully building the system:
+{{{
+[nise]$ ./setup.sh $NISE_HOME $NISE_HADOOP_HOME
+}}}
+
 = Running =
+
+== Offline Indexing ==
+
+Make sure the environment variables $NISE_HOME and $NISE_HADOOP_HOME are correctly set.
+
+Edit the script nise/script/example.sh and change the following variables IMAGE_DIR and HADOOP_WORK_DIR (any temp dir in the hadoop file system to store the intermediate results) in the beginning of the script.
+
+Change the current directory to where you want to index data structure to be stored and run the script.
+
+== Starting the server ==
+
+The above step should have produced a file "server.xml".  To start the server, simply run "$NISE_HOME/bin/server" in the current directory.
+
+
+
+{{{
+}}}
