@@ -4,7 +4,7 @@ Building and installation instructions.
 
 NISE depends on the following software:
 
-* [[http://www.boost.org|Boost library]]
+* [[http://www.boost.org | Boost library]]
 
 
 
