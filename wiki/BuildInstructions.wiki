@@ -9,8 +9,9 @@ NISE depends on the following software:
   * Hadoop C++ library (libhadooppipes.a & libhadooputils.a)
   * [http://lshkit.sourceforge.net LSHKIT]
   * [http://hadoop.apache.org/ Hadoop]
-  * GCC and java
-  * Various other libraries like libjpeg which are typically present in the system.
+  * [http://www.ijg.org/files/jpegsrc.v8d.tar.gz jpeglib] (we need the functions jpeg_mem_src/dest that only present in the 8.x version).
+  * GCC with C++11 support, cmake, java, ant
+  * Various other libraries typically present in the system.
 
 = Building =
 
