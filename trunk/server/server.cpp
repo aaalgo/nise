@@ -59,11 +59,6 @@ public:
                         Poco::Net::HTTPServerResponse& response) {
         std::string uri = request.getURI();
 
-        if (request.getHost().find('3') != std::string::npos) {
-            response.setContentType(
-            return;
-        }
-
         {
             Poco::SharedPtr<Page> page = DynamicContent::construct(Poco::URI(uri).getPath());
             if (!page.isNull()) {
