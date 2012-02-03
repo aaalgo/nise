@@ -21,7 +21,7 @@ Put the nise code, LSHKIT code and an empty build directory in a directory struc
   
 {{{
 [SRC] $ ls
-build lshkit nise
+lshkit nise
 }}}
 
 
@@ -30,12 +30,12 @@ build lshkit nise
   Run the following:
 
 {{{
-[SRC]$ cd build
-[build]$ cmake -D CMAKE_BUILD_TYPE=release ../nise
-[build]$ make
+[SRC]$ cd nise
+[nise]$ cmake -D CMAKE_BUILD_TYPE=release ../nise
+[nise]$ make
 }}}
 
-The executables will be produced in the directory SRC/build/bin .
+The executables will be produced in the directory SRC/nise/bin .
   
 == Java part ==
 
