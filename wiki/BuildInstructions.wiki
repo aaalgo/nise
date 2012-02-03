@@ -37,7 +37,7 @@ The executables will be produced in the directory SRC/build/bin .
 
   Run the following
 
-[SRC]$ cd nise/java
-[java]$ ant jar
+[SRC]\$ cd nise/java
+[java]\$ ant jar
 
 = Running =
