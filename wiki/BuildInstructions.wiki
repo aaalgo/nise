@@ -4,13 +4,11 @@ Building and installation instructions.
 
 NISE depends on the following software:
 
-* [[http://www.boost.org | Boost library]]
+* [http://www.boost.org Boost library]
+* [http://pocoproject.org/ Poco library]
+* Hadoop C++ library (libhadooppipes.a & libhadooputils.a)
+* [http://lshkit.sourceforge.net LSHKIT]
 
+Various other libraries like libjpeg which are typically already installed in the system.
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Building =
