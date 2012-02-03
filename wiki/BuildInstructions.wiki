@@ -1,0 +1,16 @@
+Building and installation instructions.
+
+= Prerequisites =
+
+NISE depends on the following software:
+
+* [[http://www.boost.org|Boost library]]
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
