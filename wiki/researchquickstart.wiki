@@ -21,7 +21,7 @@ Conference On World Wide Web, pages 141–150. ACM, 2007.
 = Top Groups on Image Retrieval =
 
   * [http://www.irisa.fr/texmex/people/jegou/index_en.php Herve Jegou], [http://bigimbaz.inrialpes.fr/ Demo]
-  * [Shih-fu Chang http://www.ee.columbia.edu/ln/dvmm/]
+  * [http://www.ee.columbia.edu/ln/dvmm/ Shih-Fu Chang]
   * [http://wang.ist.psu.edu/docs/home.shtml James Wang], [http://alipr.com/ Alipr Demo]
 
 (Please contact me if I'm missing your group.)
