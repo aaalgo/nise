@@ -2,6 +2,10 @@
 
 = Related Papers & Links =
 
+== Official Publication of This System ==
+
+[http://dataspace.princeton.edu/jspui/bitstream/88435/dsp01pc289j087/1/Dong_princeton_0181D_10018.pdf Wei Dong. High-Dimensional Similarity Search for Large Datasets. Chapter 6, A Large-Scale Image Search Engine.  Dissertation, Princeton University, 2011.]
+
 == Feature Extraction ==
 
   * [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform SIFT from wikipedia]
