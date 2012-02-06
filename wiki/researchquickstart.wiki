@@ -1,0 +1,27 @@
+#Quick Start for Researchers
+
+= Related Papers & Links =
+
+== Feature Extraction ==
+
+  * [http://en.wikipedia.org/wiki/Scale-invariant_feature_transform SIFT from wikipedia]
+  * [http://www.cs.ubc.ca/~lowe/keypoints/ David Lowe's page of SIFT]
+
+== Sketch Construction ==
+
+  * Wei Dong, Moses Charikar, Kai Li. Asymmetric Distance Estimation with Sketches for Similarity Search in High-Dimensional Spaces. SIGIR 2008.
+  * [http://people.csail.mit.edu/torralba/publications/spectralhashing.pdf Y. Weiss, A. Torralba, R. Fergus. Spectral Hashing. Advances in Neural Information Processing Systems, 2008. ]
+
+== Indexing ==
+
+  * Gurmeet Singh Manku, Arvind Jain, and Anish Das Sarma. Detecting near-
+duplicates for web crawling. In WWW ’07: Proceedings of the 16th International
+Conference On World Wide Web, pages 141–150. ACM, 2007.
+
+= Top Groups on Image Retrieval =
+
+  * [http://www.irisa.fr/texmex/people/jegou/index_en.php Herve Jegou], [http://bigimbaz.inrialpes.fr/ Demo]
+  * [Shih-fu Chang http://www.ee.columbia.edu/ln/dvmm/]
+  * [http://wang.ist.psu.edu/docs/home.shtml James Wang], [http://alipr.com/ Alipr Demo]
+
+(Please contact me if I'm missing your group.)
