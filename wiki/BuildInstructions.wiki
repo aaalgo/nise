@@ -7,7 +7,7 @@ NISE depends on the following software:
 
   * [http://www.boost.org Boost library]
   * [http://pocoproject.org/ Poco library]
-  * Hadoop C++ library (libhadooppipes.a & libhadooputils.a)
+  * Hadoop C++ library (libhadooppipes.a & libhadooputils.a, manually install mapred/src/c++/{utils, pipes} in Hadoop source tree.)
   * [http://cimg.sourceforge.net/ The CImg library]
   * [http://lshkit.sourceforge.net LSHKIT]
   * [http://archive.apache.org/dist/hadoop/core/hadoop-0.21.0/ Hadoop 0.21.0]
