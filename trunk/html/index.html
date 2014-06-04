@@ -32,11 +32,12 @@
                     </td>
                     <td>
                        <form id="upload_form" class="search" action="/search/upload" enctype="multipart/form-data" method="POST">
+                       <input type="hidden" id="form_threshold" name="threshold" value=""/>
                        <input type="hidden" id="form_expansion" name="expansion" value=""/>
                        <input type="hidden" id="form_batch" name="batch" value=""/>
                        <input type="hidden" id="form_size" name="size" value=""/>
                        <input type="hidden" id="form_offset" name="page_offset" value="0"/>
-                       <input type="hidden" id="form_count" name="page_count" value="50"/>
+                       <input type="hidden" id="form_count" name="page_count" value="20"/>
                        <input type="hidden" id="form_time" name="time_limit" value="1000"/>
                        <input id="upload_file" type="file" name="upload" />
                        <input id="upload_submit" type="submit" value="Upload"/>
@@ -97,8 +98,8 @@
                 </td></tr>
                 <tr><td>
                 <select id="result_batch" class="resubmit" name="batch">
-                    <option value="0">yes</option>
-                    <option value="1" selected>no</option>
+                    <option value="0" selected>yes</option>
+                    <option value="1">no</option>
                 </select>
                 </td></tr>
                 <tr><td>
@@ -106,8 +107,8 @@
                 </td></tr>
                 <tr><td>
                 <select id="results_per_page" class="refresh">
-                    <option value="20">20</option>
-                    <option value="50" selected>50</option>
+                    <option value="20" selected>20</option>
+                    <option value="50">50</option>
                     <option value="100">100</option>
                 </select>
                 </td></tr>

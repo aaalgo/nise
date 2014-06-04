@@ -1,37 +1,189 @@
-/* Fixes issue here http://code.google.com/p/jcrop/issues/detail?id=1 */
-.jcrop-holder { text-align: left; }
-
-.jcrop-vline, .jcrop-hline
-{
-    font-size: 0;
-    position: absolute;
-    background: white url('Jcrop.gif') top left repeat;
-}
-.jcrop-vline { height: 100%; width: 1px !important; }
-.jcrop-hline { width: 100%; height: 1px !important; }
-.jcrop-handle {
-    font-size: 1px;
-    width: 7px !important;
-    height: 7px !important;
-    border: 1px #eee solid;
-    background-color: #333;
-    /*
-    *width: 9px;
-    *height: 9px;
-    */
+#top {
+    height: 60px;
+    vertical-align: bottom;
 }
 
-.jcrop-tracker { width: 100%; height: 100%; }
+#logo {
+    width: 140px;
+    height: 60px;
+    position: relative;
+    top: -5px;
+}
 
-.custom .jcrop-vline,
-.custom .jcrop-hline
-{
-    background: yellow;
+#results {
+    text-align: center;
+    vertical-align: middle;
 }
-.custom .jcrop-handle
-{
-    border-color: black;
-    background-color: #C7BB00;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+
+#loading img {
+    display: inline;
 }
+
+
+#query {
+    vertical-align: top;
+    display: none;
+}
+
+#history {
+    text-align: left;
+}
+
+.historylink {
+    display: block;
+    cursor: pointer;
+}
+
+img.tiny {
+    border: 1px solid #FFFFFF;
+    margin: 1px;
+    display: inline;
+    width: 32;
+    height: 32;
+}
+
+.toggle {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #0000FF;
+}
+
+.toggled {
+    display: none;
+}
+
+.option_table {
+    text-align: right;
+}
+
+#bottom {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    clear: both;
+    font-family:"Arial";
+    font-size: 14px;
+    color: gray;
+}
+
+#bottom a {
+    color: gray;
+}
+
+.pagelink_dead {
+    width: auto;
+    margin: 5px;
+}
+
+.pagelink {
+    color: blue;
+    width: auto;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.main {
+    vertical-align: top;
+}
+
+.left {
+    width: 150px;
+}
+
+form.search {
+    display: inline;
+}
+
+form.search span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#query {
+  margin: 1px;
+}
+
+.summary {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 20px;
+    clear: both;
+}
+
+#index {
+    width: 100%;
+    text-align: center;
+}
+
+span.result {
+  display: inline;
+  margin: 1px;
+  border-style: solid;
+  border-color: #BFBFFF;
+  border-width: 1px;
+  padding: 3px;
+  width: 100px;
+  height: 100px;
+  float: left;
+  text-align: center;
+}   
+
+span.demolink {
+  display: inline;
+  margin: 1px;
+  border-style: solid;
+  border-color: #BFBFFF;
+  border-width: 1px;
+  padding: 3px;
+  float: left;
+  text-align: center;
+  width: auto;
+  height: auto;
+}   
+
+img.demo {
+  display: inline;
+  width: 150px;
+  height: 150px;
+}
+
+img.thumb {
+  display: inline;
+  border: 1px solid #FFFFFF;
+  width: 100px;
+  height: 100px;
+}
+
+span.result a:hover img.thumb {
+  border: 1px solid #0000FF;
+}
+
+#history_list a:hover img.tiny {
+  margin: 1px;
+  border: 1px solid #0000FF;
+}
+
+img.link {
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+    border: 0px;
+    display: inline;
+    float: right;
+}
+
+div.source {
+  width: 110px;
+  height: 20px;
+}
+
+#clip {
+  width: 150px;
+  height: 150px;
+  background: #0000FF;
+}
+
+BODY {
+  font-family:"Arial";
+}
+

@@ -252,7 +252,7 @@ QueryThumb = function (e) {
         type: "GET",
         url: "/search/local",
         data: {'id': $(this).children("input").val(),
-               //'threshold': $('#threshold').val(),
+               'threshold': $('#threshold').val(),
                'expansion': $('#result_expansion').val(),
                'batch': $('#result_batch').val(),
                'time_limit': $('#time_limit').val(),
