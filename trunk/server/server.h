@@ -837,9 +837,9 @@ namespace nise {
 
         void run () {
             Log::system().information("Background fetcher started.");
-			while (!done) {
+            while (!done) {
 #ifdef WIN32
-				Sleep(1000);
+                Sleep(1000);
 #else
                 sleep(1);
 #endif
